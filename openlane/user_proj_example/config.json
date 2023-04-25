@@ -3,6 +3,12 @@
     "DESIGN_IS_CORE": 0,
     "VERILOG_FILES": [
         "dir::../../verilog/rtl/defines.v",
+        "dir::../../verilog/rtl/clock_controller.v",
+        "dir::../../verilog/rtl/processor.v",
+        "dir::../../verilog/rtl/processor_block.v",
+        "dir::../../verilog/rtl/s2p.v",
+        "dir::../../verilog/rtl/sram.v",
+        "dir::../../verilog/rtl/write_controller.v",
         "dir::../../verilog/rtl/user_proj_example.v"
     ],
     "CLOCK_PERIOD": 25,
