@@ -1,7 +1,14 @@
 {
     "DESIGN_NAME": "user_project_wrapper",
     "VERILOG_FILES": [
-        "dir::../../verilog/rtl/*.v"
+        "dir::../../verilog/rtl/defines.v",
+        "dir::../../verilog/rtl/clock_controller.v",
+        "dir::../../verilog/rtl/processor.v",
+        "dir::../../verilog/rtl/processor_block.v",
+        "dir::../../verilog/rtl/s2p.v",
+        "dir::../../verilog/rtl/sram.v",
+        "dir::../../verilog/rtl/write_controller.v",
+        "dir::../../verilog/rtl/user_project_wrapper.v"
     ],
     "ROUTING_CORES": 1,
     "CLOCK_PERIOD": 25,
@@ -11,7 +18,8 @@
     "MACRO_PLACEMENT_CFG": "dir::macro.cfg",
     "MAGIC_DEF_LABELS": 0,
     "VERILOG_FILES_BLACKBOX": [
-        "dir::../../verilog/rtl/*.v",
+        "dir::../../verilog/rtl/defines.v",
+	"dir::../../verilog/rtl/user_proj_example.v"
     ],
     "EXTRA_LEFS": "dir::../../lef/user_proj_example.lef",
     "EXTRA_GDS_FILES": "dir::../../gds/user_proj_example.gds",
