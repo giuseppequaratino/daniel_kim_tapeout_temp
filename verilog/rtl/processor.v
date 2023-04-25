@@ -1,4 +1,4 @@
-module processor (input wire clk, input wire [2047:0] i_current_block, input wire [2047:0] i_search_window, output reg [15:0] o_sae_result); 
+module processor (input wire clk, input wire [2047:0] i_current_block, input wire [2047:0] i_search_window, output wire [15:0] o_sae_result); 
 // local variables 
 reg [7:0] idx,jdx; 
 wire [7:0] current_block [0:15] [0:15]; 
@@ -44,8 +44,6 @@ always @(posedge clk) begin
         end
 end
   
-always @(posedge clk) begin
-    assign o_sae_result = sae_accumulator;
-end
+assign o_sae_result = sae_accumulator;
 
 endmodule
